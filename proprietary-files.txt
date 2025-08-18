@@ -1,6 +1,6 @@
 # These proprietary files are extracted from Redmi Note 10 Pro (codenamed `sweet`) MIUI V14.0.9.0.TKFMIXM, unless pinned
 
-# ADSP modules
+# ADSP Modules
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
@@ -54,7 +54,24 @@ vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
 vendor/lib/libaudcal.so
 
-# Awinic firmware
+# Audio Extensions
+vendor/lib/btaudio_offload_if.so
+vendor/lib/liba2dpoffload.so
+vendor/lib/libhdmiedid.so
+vendor/lib/libhfp.so
+vendor/lib/libsndmonitor.so
+vendor/lib/libspkrprot.so
+
+# Audio HAL
+vendor/lib/hw/audio.primary.sm6150.so
+vendor/lib/vndk/libxlog.so
+vendor/lib/libadm.so
+vendor/lib/libaudio_log_utils.so
+vendor/lib/libaudioparsers.so
+vendor/lib/libaudioroute_ext.so
+vendor/lib/libqtigef.so
+
+# Awinic Firmware
 vendor/firmware/awinic/aw882xx_pid_1852_acf.bin
 vendor/firmware/awinic/aw882xx_pid_1852_monitor.bin
 vendor/firmware/awinic/aw882xx_pid_2032_acf.bin
@@ -66,23 +83,6 @@ vendor/firmware/awinic/aw882xx_spk_reg_r.bin
 vendor/firmware/aw8624_haptic.bin
 vendor/firmware/aw8624_rtp.bin
 vendor/firmware/osc_rtp_24K_5s.bin
-
-# Audio HAL
-vendor/lib/hw/audio.primary.sm6150.so
-vendor/lib/vndk/libxlog.so
-vendor/lib/libadm.so
-vendor/lib/libaudio_log_utils.so
-vendor/lib/libaudioparsers.so
-vendor/lib/libaudioroute_ext.so
-vendor/lib/libqtigef.so
-
-# Audio extensions
-vendor/lib/btaudio_offload_if.so
-vendor/lib/liba2dpoffload.so
-vendor/lib/libhdmiedid.so
-vendor/lib/libhfp.so
-vendor/lib/libsndmonitor.so
-vendor/lib/libspkrprot.so
 
 # Batterysecret
 vendor/bin/batterysecret
@@ -315,15 +315,6 @@ vendor/lib64/hw/fingerprint.fortsense.so:vendor/lib64/hw/fingerprint.fortsense.s
 vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.sm6150.so;FIX_SONAME
 vendor/lib64/vendor.sw.swfingerprint@2.0.so
 
-# IPA
-vendor/firmware/ipa_fws.b00
-vendor/firmware/ipa_fws.b01
-vendor/firmware/ipa_fws.b02
-vendor/firmware/ipa_fws.b03
-vendor/firmware/ipa_fws.b04
-vendor/firmware/ipa_fws.elf
-vendor/firmware/ipa_fws.mdt
-
 # Graphics firmware
 vendor/firmware/a615_zap.b00
 vendor/firmware/a615_zap.b01
@@ -332,6 +323,15 @@ vendor/firmware/a615_zap.elf
 vendor/firmware/a615_zap.mdt
 vendor/firmware/a618_gmu.bin
 vendor/firmware/a630_sqe.fw
+
+# IPA
+vendor/firmware/ipa_fws.b00
+vendor/firmware/ipa_fws.b01
+vendor/firmware/ipa_fws.b02
+vendor/firmware/ipa_fws.b03
+vendor/firmware/ipa_fws.b04
+vendor/firmware/ipa_fws.elf
+vendor/firmware/ipa_fws.mdt
 
 # NFC
 vendor/etc/libnfc-nci.conf
