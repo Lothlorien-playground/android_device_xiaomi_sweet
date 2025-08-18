@@ -52,15 +52,17 @@ PRODUCT_COPY_FILES += \
 TARGET_SUPPORTS_OMX_SERVICE := false
 
 # Overlay
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
-
-# Overlay-RRO
 PRODUCT_PACKAGES += \
-    SweetinproSettingsProvider \
-    SweetinproWifiOverlay \
-    SweetWifiOverlay
+    ApertureOverlaySweet \
+    FrameworkResOverlaySweet \
+    SettingsOverlaySweet \
+    SystemUIOverlaySweet
+
+PRODUCT_PACKAGES += \
+    SettingsProviderM2101K6G \
+    SettingsProviderM2101K6I \
+    WifiOverlayM2101K6G \
+    WifiOverlayM2101K6I
 
 # Power
 PRODUCT_COPY_FILES += \
