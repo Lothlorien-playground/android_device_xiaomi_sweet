@@ -18,6 +18,9 @@ TARGET_OTA_ASSERT_DEVICE := sweet,sweetin
 # Audio
 TARGET_PROVIDES_AUDIO_EXTNS := true
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_sweet
+
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/sweet.config
 
