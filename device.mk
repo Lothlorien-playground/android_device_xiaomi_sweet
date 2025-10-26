@@ -66,6 +66,9 @@ PRODUCT_PACKAGES += \
     SystemUIOverlaySweet
 
 PRODUCT_PACKAGES += \
+    YAAPSettingsOverlaySweet
+
+PRODUCT_PACKAGES += \
     SettingsProviderM2101K6G \
     SettingsProviderM2101K6I \
     WifiOverlayM2101K6G \
