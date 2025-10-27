@@ -75,6 +75,8 @@ PRODUCT_PACKAGES += \
     WifiOverlayM2101K6I
 
 # Power
+TARGET_PROVIDES_POWERHAL := true
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
