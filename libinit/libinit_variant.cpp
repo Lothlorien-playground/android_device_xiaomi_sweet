@@ -41,6 +41,9 @@ void set_variant_props(const variant_info_t variant) {
     property_override("ro.product.vendor.name", variant.name, true);
     property_override("vendor.usb.product_string", marketname, true);
 
+    if (!variant.cam_info.empty())
+        property_override("persist.sys.device_camera_info_rear", variant.cam_info.c_str(), true);
+    
     if (access("/system/bin/recovery", F_OK) != 0) {
         property_override("bluetooth.device.default_name", marketname, true);
         set_ro_build_prop("fingerprint", variant.build_fingerprint);
